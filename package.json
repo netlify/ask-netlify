@@ -1,0 +1,21 @@
+{
+  "name": "ask.netlify.com",
+  "version": "1.0.0",
+  "description": "Submit questions for the Netlify teams",
+  "scripts": {
+    "start": "gulp build && gulp watch & eleventy --serve",
+    "build": "gulp build & eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/philhawksworth/hawksworx.com"
+  },
+  "author": "Phil Hawksworth",
+  "license": "ISC",
+  "dependencies": {
+    "@11ty/eleventy": "0.5.4",
+    "gulp": "^4.0.0",
+    "gulp-sass": "^4.0.1",
+    "html-minifier": "^3.5.20"
+  }
+}

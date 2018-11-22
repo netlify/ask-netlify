@@ -1,0 +1,12 @@
+[build]
+  command = "yarn run build"
+
+[build.environment]
+  NODE_VERSION = "8.9.0"
+
+
+# Default to the home page as a 404
+[[redirects]]
+  from = "*"
+  to = "/"
+  status = 404

@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>{% include "css/main.css" %}</style>
+    <title>{%- if title -%}{{ title }}{%- else -%}Ask Netlify{%- endif -%}</title>
+    <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}Submit questions for the Netlify team to discuss in a series of videos and blog posts.{%- endif -%}"/>
+  </head>
+  <body >
+    <header>
+      <div class="container">
+        <h1>Ask questions.<br/>Get answers.</h1>
+        <p>
+          <a href="https://twitter.com/futuregerald">Gerald</a> and <a href="https://twitter.com/philhawksworth">Phil</a> are collecting your questions and will answer as many as they can in a series of videos, tutorials and blog posts.
+        </p>
+        <p>
+          <a href="https://github.com/netlify/ask-netlify/issues/new" class="btn">Just ask</a>
+        </p>
+      </div>
+    </header>
+    <div class="main">
+      <div class="container">
+      {{ content | safe }}
+      </div>
+      <footer>
+        <div class="container">
+
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>
+
+
+
