@@ -1,8 +1,6 @@
 module.exports = function(eleventyConfig) {
 
-  // static passthroughs
-  eleventyConfig.addPassthroughCopy("www/site/fonts");
-  eleventyConfig.addPassthroughCopy("www/site/images");
+
 
   // minify the html output
   const htmlmin = require("html-minifier");

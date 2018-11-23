@@ -3,13 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic|Roboto+Mono:400">
     <style>{% include "css/main.css" %}</style>
     <title>{%- if title -%}{{ title }}{%- else -%}Ask Netlify{%- endif -%}</title>
     <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}Submit questions for the Netlify team to discuss in a series of videos and blog posts.{%- endif -%}"/>
   </head>
-  <body >
+  <body>
+    {% include "svg-defs.njk" %}
     <header>
       <div class="container">
+        <a href="https://www.netlify.com" title="Netlify" class="cta-netlify-home">
+          <svg role="img" aria-label="Netlify" class="logotype">
+            <use xlink:href="#logotype" />
+          </svg>
+        </a>
         <h1>Ask questions.<br/>Get answers.</h1>
         <p>
           <a href="https://twitter.com/futuregerald">Gerald</a> and <a href="https://twitter.com/philhawksworth">Phil</a> are collecting your questions and will answer as many as they can in a series of videos, tutorials and blog posts.
@@ -19,6 +26,9 @@
         </p>
       </div>
     </header>
+    <div class="wave" aria-hidden="true">
+      <svg viewBox="0 0 1440 120"><use xlink:href="#wave"/></svg>
+    </div>
     <div class="main">
       <div class="container">
       {{ content | safe }}

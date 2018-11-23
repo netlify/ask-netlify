@@ -1,13 +1,6 @@
 @import '_variables';
 @import '_mixins';
 
-@font-face {
-  font-family: Placard;
-  src: url('/fonts/placardmtstd-cond-webfont.woff2') format('woff2'),
-       url('/fonts/placardmtstd-cond-webfont.woff') format('woff');
-  font-display: swap;
-}
-
 html, body {
   margin: 0;
   padding: 0;
@@ -15,30 +8,36 @@ html, body {
 
 body {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Roboto,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
   font-weight: normal;
-  line-height: 28px;
-  font-size: 14px;
-
-  @include bp(narrow) {
-    line-height: 31px;
-    font-size: 16px;
-  }
+  font-size: 1rem;
+  line-height: 1.618;
+  -webkit-font-smoothing: antialiased;
+  background: #fff;
+  color: rgba(14,30,37,.54);
   @include bp(mid) {
-    line-height: 34px;
-    font-size: 18px;
+    font-size: 1.25rem;
   }
+}
 
+svg[hidden] {
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 0;
+  z-index: -1;
+}
+
+svg {
+  fill: currentColor;
 }
 
 header {
   background-color: #080067;
   background-image: radial-gradient(100% 200% at 80% 100%,#7a1098,rgba(173,9,208,.27) 24%,rgba(153,12,188,0) 48%),radial-gradient(100% 300% at 22% 70%,rgba(0,189,189,.51),rgba(0,189,189,0) 47.9%),linear-gradient(114deg,rgba(14,30,37,.4),rgba(14,30,37,0) 66.4%);
   color: rgba(255,255,255,.8);
-  -webkit-font-smoothing: antialiased;
-  padding-top: 4em;
-  padding-bottom: 2em;
-
+  padding-top: 2em;
+  padding-bottom: 4em;
   a:link,
   a:visited {
     color: #fff;
@@ -48,6 +47,25 @@ header {
   a:focus {
     text-decoration: underline;
   }
+}
+
+.cta-netlify-home {
+  margin-bottom: 3em;
+  display: inline-block;
+}
+
+.logotype {
+  width: 7.4em;
+  height: 2em;
+  margin: .618em 0;
+}
+
+.wave {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  transform: translateY(-50%);
+  color: #fff;
 }
 
 a.btn:link,
@@ -77,7 +95,6 @@ a.btn:focus {
   background-color: #00c2b2;
 }
 
-
 .container {
   width: 80%;
   text-align: left;
@@ -93,41 +110,33 @@ a.btn:focus {
   }
 }
 
-
-
-
-
-ul, ol {
-  padding-left:1em;
-}
-
-
 // Headings
-h1, h2, h3, h4 {
-  font-family: arial, sans-serif;
+h1, h2, h3 {
   padding-top:1em;
   line-height: 1.2;
   color: #000;
+  margin: 1.618em auto 0;
 }
 h1 {
-  font-size: 3.8em;
-  line-height: 1;
+  font-size: calc(1.618em + 1vw);
+  line-height: 1.2;
   color: #fff;
-  font-weight: normal;
+  font-weight: bold;
   margin-top:0;
   margin-bottom:0;
   padding-top:0.3rem;
   padding-bottom:0.4rem;
 }
-h2 { font-size: 1.6em; }
-h3 { font-size: 1.2em; }
-h4 { font-size: 1.1em; }
-
-.no-wrap {
-  white-space: nowrap;
+h2 {
+  font-size: 1.618em;
+  line-height: 1.333;
+  font-weight: 600;
 }
 
-
+ul {
+  margin-left: 0;
+  padding-left: 1em;
+}
 
 hr {
   border-style: none;
@@ -136,57 +145,18 @@ hr {
 }
 
 .main {
-  color: rgba(0,0,0,0.8);
+  padding-bottom: 6em;
 }
 
-
-
-// Header
-// header {
-
-//   ul.nav {
-//     font-family: Arial, sans-serif;
-//     font-weight: bold;
-//     font-size: 0.9em;
-//     list-style: none;
-//     margin:0;
-//     padding:0;
-//     li {
-//       display: inline;
-//     }
-//     a {
-//       display:inline-block;
-//       padding: 4em 0.5em 0.2em 0.5em;
-//       border-bottom-style: none;
-//     }
-//     a.home {
-//       padding-left:0.7em;
-//       padding-right:0.7em;
-//     }
-//     a.blog {
-//       padding-left:1em;
-//     }
-//   }
-// }
-
-
-
-// footer
-// footer {
-
-
-// }
-
-
-// a {
-//   border-bottom-color: #9bf;
-//   &:link,
-//   &:visited {
-//     color: #46c;
-//   }
-//   &:hover,
-//   &:focus {
-//     color: #2755de;
-//     border-bottom-color: #2755de;
-//   }
-// }
+a {
+  outline-color: #00c2b2;
+  color: #00b09f;
+  &:link,
+  &:visited {
+    text-decoration: none;
+  }
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
