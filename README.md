@@ -12,6 +12,8 @@ Why not take a [look at the questions](https://github.com/netlify/ask-netlify/is
 The answers will come in a future video, or perhaps you'll help us decide on a useful tutorial or blog post.
 
 
+![ask.netlify.com](ask-screenshot.jpg)
+
 ## The site
 
 This repo also holds the code for the simple site which lives at [ask.netlify.com](https://ask.netlify.com).
