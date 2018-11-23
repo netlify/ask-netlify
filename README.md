@@ -35,7 +35,7 @@ To build the site you need:
 git clone git@github.com:netlify/ask-netlify.git
 
 # go to the working directory
-cd ask-netlify.com
+cd ask-netlify
 
 # install dependencies
 yarn
