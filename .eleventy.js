@@ -1,8 +1,8 @@
 module.exports = function(eleventyConfig) {
 
   // static passthroughs
-  eleventyConfig.addPassthroughCopy("src/site/fonts");
-  eleventyConfig.addPassthroughCopy("src/site/images");
+  eleventyConfig.addPassthroughCopy("www/site/fonts");
+  eleventyConfig.addPassthroughCopy("www/site/images");
 
   // minify the html output
   const htmlmin = require("html-minifier");
@@ -22,7 +22,7 @@ module.exports = function(eleventyConfig) {
   // other config settings
   return {
     dir: {
-      input: "src/site",
+      input: "www/site",
       output: "dist"
     },
     templateFormats : ["njk", "md"],

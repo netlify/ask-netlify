@@ -6,12 +6,12 @@ const sass    = require("gulp-sass");
   generate the css with sass
 */
 gulp.task('css', function() {
-  return gulp.src('./src/scss/main.scss')
+  return gulp.src('./www/scss/main.scss')
     .pipe(sass({
       outputStyle: 'compressed'
     })
     .on('error', sass.logError))
-    .pipe(gulp.dest('./src/site/_includes/css'));
+    .pipe(gulp.dest('./www/site/_includes/css'));
 });
 
 
