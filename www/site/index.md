@@ -15,9 +15,9 @@ Whatever you ask, we'll do our best to answer. Even if we have to get help from 
 
 ## How to ask?
 
-We'll gather questions as issues in a [github repository](https://github.com/netlify/ask-netlify). That way you can see other questions and add you support for those questions getting answered.
+We'll gather questions as issues in a [github repository](https://github.com/netlify/ask-netlify/issues). That way you can see other questions and add you support for those questions getting answered.
 
-Why not take a look at the question which have already been asked, and [open an issue](https://github.com/netlify/ask-netlify/issues/new) if you'd like to ask a question of your own.
+Why not take a look at [the questions](https://github.com/netlify/ask-netlify/issues) which have already been asked, and [open an issue](https://github.com/netlify/ask-netlify/issues/new) if you'd like to ask a question of your own.
 
 The answers will come in a future video, or perhaps you'll help us decide on a useful tutorial or blog post.
 
