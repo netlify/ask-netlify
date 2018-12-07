@@ -17,13 +17,24 @@
             <use xlink:href="#logotype" />
           </svg>
         </a>
-        <h1>Ask questions.<br/>Get answers.</h1>
-        <p>
-          <a href="https://twitter.com/futuregerald">Gerald</a> and <a href="https://twitter.com/philhawksworth">Phil</a> are collecting your questions and will answer as many as they can in a series of videos, tutorials and blog posts.
-        </p>
-        <p>
-          <a href="https://github.com/netlify/ask-netlify/issues/new" class="btn">Just ask</a>
-        </p>
+        {% if page.url == "/" %}
+          <h1>Ask questions.<br/>Get answers.</h1>
+          <p>
+            <a href="https://twitter.com/futuregerald">Gerald</a> and <a href="https://twitter.com/philhawksworth">Phil</a>
+            are collecting your questions and will answer as many as they can in a series of videos, tutorials and blog posts.
+          </p>
+          <p>
+            <a href="https://github.com/netlify/ask-netlify/issues/new" class="btn">Just ask</a>
+          </p>
+        {% else %}
+          <h1>{{ title }}</h1>
+          <p>
+            Go <a href="/">home</a> for more episodes and information.
+          </p>
+          <p>
+            <a href="https://github.com/netlify/ask-netlify/issues/new" class="btn">Or ask something</a>
+          </p>
+        {% endif %}
       </div>
     </header>
     <div class="wave" aria-hidden="true">
@@ -33,10 +44,6 @@
       <div class="container">
       {{ content | safe }}
       </div>
-      <footer>
-        <div class="container">
-        </div>
-      </footer>
     </div>
   </body>
 </html>

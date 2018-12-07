@@ -29,7 +29,7 @@ module.exports = function(eleventyConfig) {
   // other config settings
   return {
     dir: {
-      input: "www/site",
+      input: "src/site",
       output: "dist"
     },
     templateFormats : ["njk", "md"],

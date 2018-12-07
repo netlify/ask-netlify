@@ -6,12 +6,12 @@ const sass    = require("gulp-sass");
   generate the css with sass
 */
 gulp.task('css', function() {
-  return gulp.src('./www/scss/main.scss')
+  return gulp.src('./src/scss/main.scss')
     .pipe(sass({
       outputStyle: 'compressed'
     })
     .on('error', sass.logError))
-    .pipe(gulp.dest('./www/site/_includes/css'));
+    .pipe(gulp.dest('./src/site/_includes/css'));
 });
 
 
@@ -19,7 +19,7 @@ gulp.task('css', function() {
   Watch folders for changes
 */
 gulp.task("watch", function() {
-  gulp.watch('./www/scss/**/*.scss', gulp.parallel('css'));
+  gulp.watch('./src/scss/**/*.scss', gulp.parallel('css'));
 });
 
 

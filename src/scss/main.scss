@@ -50,7 +50,6 @@ header {
 }
 
 .cta-netlify-home {
-  margin-bottom: 3em;
   display: inline-block;
 }
 
@@ -122,7 +121,7 @@ header h1 {
   line-height: 1.2;
   color: #fff;
   font-weight: bold;
-  margin-top:0;
+  margin-top:1em;
   margin-bottom:0;
   padding-top:0.3rem;
   padding-bottom:0.4rem;
@@ -162,12 +161,12 @@ a {
 }
 
 
-.squishy-embed{
+.squishy-embed {
   position: relative;
   width: 100%;
   padding-bottom: 56.25%;
   height: 0;
-  margin-top:1em;
+  margin-top:2em;
 }
 .squishy-embed iframe{
   position: absolute;

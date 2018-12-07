@@ -3,10 +3,6 @@ layout: layouts/base.njk
 title: Ask questions about Netlify
 ---
 
-{% for episode in collections.episodes %}
-{% set item = episode %}
-{% include "episode-details.njk" %}
-{% endfor %}
 
 ## What to ask?
 
@@ -23,6 +19,15 @@ We'll gather questions as issues in a [github repository](https://github.com/net
 Why not take a look at [the questions](https://github.com/netlify/ask-netlify/issues) which have already been asked, and [open an issue](https://github.com/netlify/ask-netlify/issues/new) if you'd like to ask a question of your own.
 
 The answers will come in a future video, or perhaps you'll help us decide on a useful tutorial or blog post.
+
+
+## Episodes
+<ul>
+{% for episode in collections.episodes %}
+{% set item = episode %}
+{% include "episode-details.njk" %}
+{% endfor %}
+</ul>
 
 
 ## psst! The Support Team is over there
