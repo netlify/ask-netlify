@@ -13,7 +13,7 @@
   "author": "Phil Hawksworth",
   "license": "ISC",
   "dependencies": {
-    "@11ty/eleventy": "0.5.4",
+    "@11ty/eleventy": "0.6.0",
     "gulp": "^4.0.0",
     "gulp-sass": "^4.0.1",
     "html-minifier": "^3.5.20"

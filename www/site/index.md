@@ -3,6 +3,10 @@ layout: layouts/base.njk
 title: Ask questions about Netlify
 ---
 
+{% for episode in collections.episodes %}
+{% set item = episode %}
+{% include "episode-details.njk" %}
+{% endfor %}
 
 ## What to ask?
 
@@ -11,7 +15,6 @@ title: Ask questions about Netlify
 - What tips are there for getting the best results on the JAMstack?
 
 Whatever you ask, we'll do our best to answer. Even if we have to get help from somebody wiser than ourselves!
-
 
 ## How to ask?
 
@@ -22,11 +25,9 @@ Why not take a look at [the questions](https://github.com/netlify/ask-netlify/is
 The answers will come in a future video, or perhaps you'll help us decide on a useful tutorial or blog post.
 
 
-
 ## psst! The Support Team is over there
 
 We're not replacing the support team with this. If you have a support issue, you're still advised to contact support via [www.netlify.com/support](https://www.netlify.com/support)
-
 
 
 

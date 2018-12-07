@@ -1,6 +1,15 @@
 module.exports = function(eleventyConfig) {
 
+  // Get only content that matches a tag
+  eleventyConfig.addCollection("episodes", function(collection) {
+    return collection.getFilteredByTag("episode");
+  });
 
+
+  // Nunjucks question link Shortcode
+  eleventyConfig.addNunjucksShortcode("qlink", function(number) {
+    return `<a href="https://github.com/netlify/ask-netlify/issues/${number}" class="question-link" target="_BLANK" rel="noopener">Question #${number}</a>`
+  });
 
   // minify the html output
   const htmlmin = require("html-minifier");
@@ -25,8 +34,7 @@ module.exports = function(eleventyConfig) {
     },
     templateFormats : ["njk", "md"],
     htmlTemplateEngine : "njk",
-    markdownTemplateEngine : "njk",
-    passthroughFileCopy: true
+    markdownTemplateEngine : "njk"
   };
 
 };
