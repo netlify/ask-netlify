@@ -192,6 +192,7 @@ a.question-link {
     margin-right: .5em;
     text-decoration: none;
     transition: opacity .15s ease;
+    white-space: nowrap;
   }
   &:hover,
   &:focus {
