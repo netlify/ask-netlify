@@ -7,6 +7,6 @@
 
 # Default to the home page as a 404
 [[redirects]]
-  from = "*"
+  from = "/*"
   to = "/"
   status = 404
