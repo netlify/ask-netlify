@@ -9,6 +9,6 @@
 What I really want to ask is...
 
 
-## Anything other comments for Netlify
+## Additional comments for Netlify
 
 If you like.
