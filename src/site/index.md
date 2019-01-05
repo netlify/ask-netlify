@@ -29,6 +29,7 @@ The answers will come in a future video, or perhaps you'll help us decide on a u
 {% endfor %}
 </ul>
 
+Eager for more? You can subscribe to an [RSS feed](/feed.xml) of the episodes.
 
 ## psst! The Support Team is over there
 

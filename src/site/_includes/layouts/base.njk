@@ -7,6 +7,7 @@
     <style>{% include "css/main.css" %}</style>
     <title>{%- if title -%}{{ title }}{%- else -%}Ask Netlify{%- endif -%}</title>
     <meta name="description" content="{%- if description -%}{{ description }}{%- else -%}Submit questions for the Netlify team to discuss in a series of videos and blog posts.{%- endif -%}"/>
+    <link rel="alternate" href="/feed.xml" title="Ask Netlify" type="application/atom+xml">
   </head>
   <body>
     {% include "svg-defs.njk" %}
