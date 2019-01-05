@@ -8,7 +8,7 @@
 # Tease unfound episodes
 [[redirects]]
   from = "/episode/*"
-  to = "/episode/not-found/index.html"
+  to = "/episode-not-found/index.html"
   status = 404
 
 # Default to the home page as a 404
