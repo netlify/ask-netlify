@@ -5,14 +5,14 @@
   NODE_VERSION = "8.9.0"
 
 
+# Tease unfound episodes
+[[redirects]]
+  from = "/episode/*"
+  to = "/episode/not-found/index.html"
+  status = 404
+
 # Default to the home page as a 404
 [[redirects]]
   from = "/*"
-  to = "/"
-  status = 404
-
-# Tease unfoud episodes
-[[redirects]]
-  from = "/episode/*"
-  to = "/episode/not-found"
+  to = "/index.html"
   status = 404
