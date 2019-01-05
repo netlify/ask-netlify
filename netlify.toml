@@ -7,6 +7,12 @@
 
 # Default to the home page as a 404
 [[redirects]]
-  from = "*"
+  from = "/"
   to = "/"
+  status = 404
+
+# Default to the home page as a 404
+[[redirects]]
+  from = "/episode/"
+  to = "/episode/not-found"
   status = 404
