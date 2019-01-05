@@ -1,0 +1,36 @@
+---
+permalink: feed.xml
+metadata:
+  title: Ask Netlify
+  url: https://ask.netlify.com
+  author:
+    name: Netlify
+  feed:
+    subtitle: Gerald and Phil are collecting your questions about Netlify and will answer as many as they can in a series of videos, tutorials and blog posts.
+    filename: feed.xml
+    path: feed.xml
+    url: https://ask.netlify.com/feed.xml
+    id: https://ask.netlify.com
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>{{ metadata.title }}</title>
+  <subtitle>{{ metadata.feed.subtitle }}</subtitle>
+  <link href="{{ metadata.feed.url }}" rel="self"/>
+  <link href="{{ metadata.url }}"/>
+  <updated>{{ collections.episode | rssLastUpdatedDate }}</updated>
+  <id>{{ metadata.feed.id }}</id>
+  <author>
+    <name>{{ metadata.author.name }}</name>
+  </author>
+  {%- for episode in collections.episode %}
+  {% set absolutePostUrl %}{{ episode.url | url | absoluteUrl(metadata.url) }}{% endset %}
+  <entry>
+    <title>{{ episode.data.title }}</title>
+    <link href="{{ absolutePostUrl }}"/>
+    <updated>{{ episode.date | rssDate }}</updated>
+    <id>{{ absolutePostUrl }}</id>
+    <content type="html">{{ episode.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
+  </entry>
+  {%- endfor %}
+</feed>

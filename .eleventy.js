@@ -5,11 +5,14 @@ module.exports = function(eleventyConfig) {
     return collection.getFilteredByTag("episode");
   });
 
-
   // Nunjucks question link Shortcode
   eleventyConfig.addNunjucksShortcode("qlink", function(number) {
     return `<a href="https://github.com/netlify/ask-netlify/issues/${number}" class="question-link" target="_BLANK" rel="noopener">Question #${number}</a>`
   });
+
+  // RSS plugin
+  const pluginRss = require("@11ty/eleventy-plugin-rss");
+  eleventyConfig.addPlugin(pluginRss);
 
   // minify the html output
   const htmlmin = require("html-minifier");
@@ -17,7 +20,7 @@ module.exports = function(eleventyConfig) {
     if( outputPath.endsWith(".html") ) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
-        removeComments: false, // we need comments to identify the expcerpt split marker.
+        removeComments: true,
         collapseWhitespace: true
       });
       return minified;

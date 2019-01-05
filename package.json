@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "@11ty/eleventy": "0.6.0",
+    "@11ty/eleventy-plugin-rss": "^1.0.5",
     "gulp": "^4.0.0",
     "gulp-sass": "^4.0.1",
     "html-minifier": "^3.5.20"
