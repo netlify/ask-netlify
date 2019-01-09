@@ -23,7 +23,7 @@ The answers will come in a future video, or perhaps you'll help us decide on a u
 
 ## Episodes
 <ul>
-{% for episode in collections.episodes %}
+{% for episode in collections.episodes | reverse %}
 {% set item = episode %}
 {% include "episode-details.njk" %}
 {% endfor %}
