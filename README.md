@@ -2,6 +2,8 @@
 
 Do you have questions for [Netlify](http://www.netlify.com)? We are gathering questions to find the best things to answer in a series of videos.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/39480369-35b1-4965-bc1b-483a8e0df7a3/deploy-status)](https://app.netlify.com/sites/ask/deploys)
+
 
 ## How to ask?
 
