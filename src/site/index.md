@@ -12,7 +12,7 @@ title: Ask questions about Netlify
 
 Whatever you ask, we'll do our best to answer. Even if we have to get help from somebody wiser than ourselves!
 
-## How to ask?
+## How to ask a question?
 
 We'll gather questions as issues in a [github repository](https://github.com/netlify/ask-netlify/issues). That way you can see other questions and add you support for those questions getting answered.
 
