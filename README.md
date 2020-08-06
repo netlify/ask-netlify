@@ -7,6 +7,8 @@ Do you have questions for [Netlify](http://www.netlify.com)? We are gathering qu
 
 ## How to ask?
 
+_If you have a question for our support team or you’re having trouble with your Netlify site, please head over to the [Netlify Community forum](https://community.netlify.com/) for help!_
+
 We'll gather questions as [issues in this repo](https://github.com/netlify/ask-netlify/issues). That way you can see other questions and add you support for those questions getting answered.
 
 Why not take a [look at the questions](https://github.com/netlify/ask-netlify/issues) which have already been asked, and [open an issue](https://github.com/netlify/ask-netlify/issues/new) if you'd like to ask a question of your own.
